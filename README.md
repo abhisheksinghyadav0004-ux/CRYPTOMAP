@@ -20,6 +20,41 @@ CryptoMap is a local-first cybersecurity application for teams that need an evid
 - **Audit-backed local workspace** with persisted assets, findings, dependencies, migration tasks, and events.
 - **Premium command-center UI** built for fast security review, with responsive layouts and clear synthetic-demo labels.
 
+## Product Screens
+
+> The screenshots below show the built-in **Synthetic Demo Workspace**. They illustrate the product workflow only and do not represent customer systems or live infrastructure.
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <strong>Security Overview</strong><br />
+      Workspace metrics, algorithm and risk distributions, prioritized actions, and recent discoveries.
+      <br /><br />
+      <img src="docs/screenshots/cryptomap-overview.png" alt="CryptoMap command-center overview with cryptographic intelligence metrics" />
+    </td>
+    <td width="50%" valign="top">
+      <strong>Authorized Asset Discovery</strong><br />
+      Explicit upload boundary with supported file types and defensive-analysis safeguards.
+      <br /><br />
+      <img src="docs/screenshots/asset-discovery.png" alt="CryptoMap authorized asset discovery upload workflow" />
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <strong>PQC Readiness</strong><br />
+      Post-quantum exposure, planning score, NIST references, and next-step guidance.
+      <br /><br />
+      <img src="docs/screenshots/pqc-readiness.png" alt="CryptoMap post-quantum cryptography readiness workspace" />
+    </td>
+    <td width="50%" valign="top">
+      <strong>Security Reports</strong><br />
+      Evidence-backed scope summary with downloadable PDF and CSV exports.
+      <br /><br />
+      <img src="docs/screenshots/security-reports.png" alt="CryptoMap security reporting and export interface" />
+    </td>
+  </tr>
+</table>
+
 ## Product Workflow
 
 ```mermaid
