@@ -1,0 +1,9 @@
+frontend/node_modules/
+frontend/dist/
+backend/.venv/
+backend/cryptomap.db
+backend/__pycache__/
+backend/.pytest_cache/
+**/__pycache__/
+.env
+*.log

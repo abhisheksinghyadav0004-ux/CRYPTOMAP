@@ -1,0 +1,416 @@
+/* Visual-only enhancements layered over the functional product UI. */
+.app-shell {
+  position: relative;
+  isolation: isolate;
+}
+
+.app-shell::before {
+  background-image:
+    linear-gradient(#1a2b3a42 1px, transparent 1px),
+    linear-gradient(90deg, #1a2b3a42 1px, transparent 1px);
+  background-size: 42px 42px;
+  content: "";
+  inset: 0;
+  mask-image: linear-gradient(
+    90deg,
+    transparent,
+    #000 19%,
+    #000 81%,
+    transparent
+  );
+  opacity: 0.42;
+  pointer-events: none;
+  position: fixed;
+  z-index: -1;
+}
+
+.sidebar {
+  overflow: hidden;
+}
+
+.sidebar::before {
+  color: #56d9ee16;
+  content: "CRYPTOGRAPHIC INTELLIGENCE";
+  font:
+    9px "DM Mono",
+    monospace;
+  letter-spacing: 0.24em;
+  position: absolute;
+  right: -28px;
+  top: 115px;
+  transform: rotate(90deg);
+}
+
+.brand-mark {
+  box-shadow:
+    0 0 0 4px #20c7e810,
+    0 12px 24px #0004;
+}
+
+.brand b {
+  letter-spacing: -0.5px;
+}
+
+.topbar {
+  box-shadow: 0 8px 30px #03070b33;
+}
+
+.search:focus-within {
+  border-color: #28cee9;
+  box-shadow: 0 0 0 3px #20c7e814;
+}
+
+.icon-btn:hover {
+  background: #142b38;
+  border-color: #4290a4;
+  color: #d8f9ff;
+}
+
+.page-title {
+  align-items: end;
+  border-bottom: 1px solid #25394b;
+  margin-bottom: 18px;
+  padding: 4px 0 19px;
+  position: relative;
+}
+
+.page-title::after {
+  background: #20c7e8;
+  bottom: -1px;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  width: 88px;
+}
+
+.title-main {
+  display: grid;
+  gap: 4px;
+}
+
+.section-code {
+  align-items: center;
+  color: #637b91;
+  display: flex;
+  font:
+    9px "DM Mono",
+    monospace;
+  gap: 7px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.section-code span {
+  background: #2acbe6;
+  height: 2px;
+  width: 17px;
+}
+
+.page-title h1 {
+  font-size: 30px;
+  letter-spacing: -1.1px;
+}
+
+.title-side {
+  align-items: center;
+  display: flex;
+  gap: 11px;
+}
+
+.analysis-live {
+  align-items: center;
+  color: #8fb4bf;
+  display: inline-flex;
+  font:
+    9px "DM Mono",
+    monospace;
+  gap: 6px;
+  letter-spacing: 0.08em;
+}
+
+.analysis-live i {
+  background: #4bd092;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px #4bd0921a;
+  display: block;
+  height: 6px;
+  width: 6px;
+}
+
+.panel {
+  box-shadow: 0 14px 32px #00000018;
+  position: relative;
+  transition:
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.panel::before {
+  background: linear-gradient(90deg, transparent, #3cd7ee88, transparent);
+  content: "";
+  height: 1px;
+  inset: 0 0 auto;
+  opacity: 0.7;
+  position: absolute;
+}
+
+.panel:hover {
+  border-color: #3f657c;
+  box-shadow: 0 20px 38px #00000026;
+  transform: translateY(-2px);
+}
+
+.metric {
+  background: linear-gradient(135deg, #152432, #111a24 72%);
+  overflow: hidden;
+}
+
+.metric::after {
+  border: 1px solid #31d1e626;
+  border-radius: 50%;
+  bottom: -27px;
+  content: "";
+  height: 92px;
+  position: absolute;
+  right: -22px;
+  width: 92px;
+}
+
+.metric strong {
+  font-weight: 500;
+}
+
+.panel-head {
+  background: #131f2b70;
+  border-bottom: 1px solid #223448;
+}
+
+.panel-head h2 {
+  letter-spacing: -0.35px;
+}
+
+.action-list > div,
+.recent,
+.table-panel tbody tr {
+  transition: background 0.16s ease;
+}
+
+.action-list > div:hover,
+.recent:hover,
+.table-panel tbody tr:hover {
+  background: #172634;
+}
+
+.findings article {
+  transition:
+    transform 0.18s ease,
+    border-color 0.18s ease;
+}
+
+.findings article:hover {
+  border-color: #416177;
+  transform: translateY(-2px);
+}
+
+.risk {
+  border: 1px solid #ffffff0e;
+}
+
+.graph {
+  background: radial-gradient(circle at 50% 30%, #14354877, transparent 45%);
+}
+
+.drop-panel {
+  background:
+    radial-gradient(circle at 50% 0, #1b3c4a73, transparent 40%), #121d28;
+}
+
+.score-card {
+  background: linear-gradient(155deg, #102c35, #121d28 60%);
+}
+
+.report-card {
+  background: linear-gradient(110deg, #122c38, #121d28 55%);
+}
+
+@media (max-width: 760px) {
+  .analysis-live {
+    display: none;
+  }
+
+  .title-side {
+    margin-left: auto;
+  }
+
+  .page-title h1 {
+    font-size: 26px;
+  }
+}
+
+/* Command-center details for the intelligence dashboard. */
+.sidebar nav button {
+  letter-spacing: 0.01em;
+  position: relative;
+}
+
+.sidebar nav button::before {
+  background: #2fd4ee;
+  border-radius: 0 4px 4px 0;
+  content: '';
+  height: 22px;
+  left: -17px;
+  opacity: 0;
+  position: absolute;
+  top: calc(50% - 11px);
+  transform: scaleY(0.4);
+  transition: opacity 0.18s ease, transform 0.18s ease;
+  width: 3px;
+}
+
+.sidebar nav button.active::before {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+.sidebar nav button.active {
+  box-shadow: inset 0 0 0 1px #37d4e51e, 0 10px 22px #00000016;
+}
+
+.sidebar-foot {
+  background: linear-gradient(135deg, #102633b8, #101b25b8);
+  border: 1px solid #2e526436;
+  box-shadow: inset 0 1px #a7f6ff0d;
+}
+
+.signal-rail {
+  align-items: stretch;
+  background: linear-gradient(100deg, #102632, #162737 48%, #10222e);
+  border: 1px solid #2b5062;
+  display: grid;
+  gap: 0;
+  grid-template-columns: 1.35fr repeat(3, 1fr) auto;
+  margin: 16px 0;
+  min-height: 76px;
+  overflow: hidden;
+  position: relative;
+}
+
+.signal-rail::after {
+  background: linear-gradient(90deg, transparent, #55e7ff55, transparent);
+  content: '';
+  height: 1px;
+  left: 18px;
+  position: absolute;
+  right: 18px;
+  top: 0;
+}
+
+.signal-intro,
+.signal-item,
+.signal-label {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 13px 18px;
+}
+
+.signal-intro {
+  color: #bfeff6;
+  flex-direction: row;
+  font: 10px 'DM Mono', monospace;
+  gap: 8px;
+  justify-content: flex-start;
+  letter-spacing: 0.12em;
+}
+
+.pulse-dot {
+  background: #43d796;
+  border-radius: 50%;
+  box-shadow: 0 0 0 5px #43d79612, 0 0 18px #43d796aa;
+  height: 7px;
+  width: 7px;
+}
+
+.signal-item {
+  border-left: 1px solid #6490a022;
+}
+
+.signal-item small {
+  color: #6f899e;
+  font: 9px 'DM Mono', monospace;
+  letter-spacing: 0.08em;
+}
+
+.signal-item b {
+  color: #e4f9fb;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+.signal-item em {
+  color: #95aec0;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.signal-danger b {
+  color: #ffb2af;
+}
+
+.signal-label {
+  background: #0b1822aa;
+  color: #69d9e8;
+  font: 9px 'DM Mono', monospace;
+  letter-spacing: 0.11em;
+  white-space: nowrap;
+}
+
+.chart-panel .recharts-wrapper {
+  filter: drop-shadow(0 8px 15px #00000020);
+}
+
+.chart-panel .recharts-cartesian-grid-horizontal line,
+.chart-panel .recharts-cartesian-grid-vertical line {
+  stroke: #39506480;
+}
+
+.primary {
+  box-shadow: 0 8px 18px #00c7e326;
+}
+
+.primary:hover:not(:disabled) {
+  box-shadow: 0 12px 24px #00c7e340;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 980px) {
+  .signal-rail {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .signal-label {
+    display: none;
+  }
+
+  .signal-intro {
+    border-bottom: 1px solid #6490a022;
+  }
+}
+
+@media (max-width: 560px) {
+  .signal-rail {
+    grid-template-columns: 1fr;
+  }
+
+  .signal-intro,
+  .signal-item {
+    border-bottom: 1px solid #6490a022;
+    border-left: 0;
+    min-height: 58px;
+  }
+}
