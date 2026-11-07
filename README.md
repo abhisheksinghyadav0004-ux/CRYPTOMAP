@@ -53,6 +53,48 @@ CryptoMap is a local-first cybersecurity application for teams that need an evid
       <img src="docs/screenshots/security-reports.png" alt="CryptoMap security reporting and export interface" />
     </td>
   </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <strong>Cryptographic Inventory</strong><br />
+      Workspace-scoped asset records with asset type, evidence source, assessed risk, and discovery time.
+      <br /><br />
+      <img src="docs/screenshots/cryptographic-inventory.png" alt="CryptoMap cryptographic asset inventory" />
+    </td>
+    <td width="50%" valign="top">
+      <strong>Algorithm Intelligence</strong><br />
+      Rule-level evidence, risk classification, quantum relevance, and a recommended action for every finding.
+      <br /><br />
+      <img src="docs/screenshots/algorithm-intelligence.png" alt="CryptoMap algorithm intelligence findings" />
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <strong>Certificate Intelligence</strong><br />
+      Certificate-specific inspection results derived from the authorized evidence in the workspace.
+      <br /><br />
+      <img src="docs/screenshots/certificate-intelligence.png" alt="CryptoMap certificate intelligence results" />
+    </td>
+    <td width="50%" valign="top">
+      <strong>Dependency Graph</strong><br />
+      Visual relationships between stored assets, limited to documented and evidenced dependencies.
+      <br /><br />
+      <img src="docs/screenshots/dependency-graph.png" alt="CryptoMap cryptographic dependency graph" />
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <strong>Migration Planner</strong><br />
+      Persisted modernization tasks with priority, current lifecycle status, and migration direction.
+      <br /><br />
+      <img src="docs/screenshots/migration-planner.png" alt="CryptoMap cryptographic migration planning board" />
+    </td>
+    <td width="50%" valign="top">
+      <strong>Workspace Settings</strong><br />
+      Local development and data-boundary configuration, including explicit synthetic-demo labeling.
+      <br /><br />
+      <img src="docs/screenshots/settings.png" alt="CryptoMap workspace settings and data boundaries" />
+    </td>
+  </tr>
 </table>
 
 ## Product Workflow
